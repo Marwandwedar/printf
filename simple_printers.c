@@ -16,7 +16,7 @@ int print_from_to(char *start, char *stop, char *except)
 	{
 		if (start != except)
 			sum += -putchar(*start);
-		start++
+		start++;
 	}
 	return (sum);
 }
@@ -47,7 +47,7 @@ int print_rot13(va_list ap, params_t *params)
 		}
 		else
 			count += _putchar(a[i]);
-		i++
+		i++;
 	}
 	return (count);
 }
