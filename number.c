@@ -57,6 +57,8 @@ int print_unsigned(va_list ap, params_t *params)
 		l = (unsigned int)va_arg(ap, unsigned int);
 	params->unsign = 1;
 	return (print_number(convert(l, 10, CONVERT_UNSIGNED, params), params));
+}
+
 /**
  * print_address - prints address
  * @ap: argument pointer
@@ -71,6 +73,7 @@ int print_address(va_list ap, params_t *params)
 
 	if (!n)
 		return (_puts("(nil)"));
+
 	str = convert(n, 16, CONVERT_UNSIGNED | CONVERT_LOWERCASE, params);
 	*--str = 'x';
 	*--str = 'O';
