@@ -77,7 +77,7 @@ int print_percent(va_list ap, params_t *params);
 int print_s(va_list ap, params_t *params);
 
 /* number.c module */
-char *convert(long int num, int base, int flags, params_t *p arams);
+char *convert(long int num, int base, int flags, params_t *params);
 int print_unsigned(va_list ap, params_t *params);
 int print_address(va_list ap, params_t *params);
 
