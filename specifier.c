@@ -38,7 +38,7 @@ int (*get_specifier(char *s))(va_list ap, params_t *params)
 		return (NULL);
 }
 /**
- * get _print_func - finds the format func
+ * get_print_func - finds the format func
  * @s: the format string
  * @ap: argument pointer
  * @params: the parameters struct
